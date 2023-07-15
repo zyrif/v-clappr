@@ -112,6 +112,7 @@
 
       onMounted(async () => {
         await initPlayer();
+        emit('init', player.value);
       });
 
       onBeforeUnmount(() => {
