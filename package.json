@@ -17,7 +17,13 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
-    "dist"
+    "example",
+    "shims",
+    "src",
+    "*.js",
+    "*.ts",
+    "*.cjs",
+    "*.json"
   ],
   "scripts": {
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly && prettier --write dist/*{cjs,js,ts}",
